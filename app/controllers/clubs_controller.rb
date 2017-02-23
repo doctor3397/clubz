@@ -1,4 +1,5 @@
 class ClubsController < ApplicationController
+  before_action :require_login, only: [:show]
 
   def index
     @clubs = Club.all
@@ -7,5 +8,5 @@ class ClubsController < ApplicationController
   def show
     @club = Club.find(params[:id])
   end
-  
+
 end
