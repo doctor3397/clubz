@@ -6,4 +6,8 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
 
   validates :email, uniqueness: true
+
+  ROLES = ["droid", "wizard", "hobbit", "gangster"]
+  ALLOWED = ["wizard", "hobbit"]
+  # call in rails console, User::ROLES, User::ALLOWED
 end
