@@ -42,6 +42,7 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (8.2.5)
+    cancancan (1.16.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
     erubis (2.7.0)
@@ -151,6 +152,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  cancancan
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)
