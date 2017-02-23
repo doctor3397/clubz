@@ -7,6 +7,7 @@ class ClubsController < ApplicationController
 
   def show
     @club = Club.find(params[:id])
+    authorize! :read, @club
   end
 
 end
